@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculator</title>
+
+    <link rel="stylesheet" href="./assets/css/style.css">
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN"
+        crossorigin="anonymous"></script>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=GFS+Neohellenic:wght@400;700&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css">
+</head>
+
+<body>
+
+    <!-- Section Starts -->
+    <section class="calculator-module">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-4 col-12"></div>
+                <div class="col-lg-4 col-12">
+                    <div class="calculator-body">
+                        <div class="screen">
+                            <div class="screen-logo d-flex align-items-center">
+                                <i class="fa-brands fa-digital-ocean logo-link"></i> Calculator
+                            </div>
+                            <div class="screen-text">
+                                <p id="expression">0</p>
+                                <h1 id="result"></h1>
+                            </div>
+                        </div>
+                        <div class="input-buttons">
+                            <div class="btn-row d-flex justify-content-evenly">
+                                <button class="input-btn disabled"></button>
+                                <button class="input-btn" onclick="deleteKey()">CE</button>
+                                <button class="input-btn" onclick="clearScreen()">AC</button>
+                                <button class="input-btn" onclick="displayNumber('/')"><i
+                                        class="fa-solid fa-divide"></i></button>
+                            </div>
+                            <div class="btn-row d-flex justify-content-evenly">
+                                <button class="input-btn" onclick="displayNumber(7)">7</button>
+                                <button class="input-btn" onclick="displayNumber(8)">8</button>
+                                <button class="input-btn" onclick="displayNumber(9)">9</button>
+                                <button class="input-btn" onclick="displayNumber('*')"><i
+                                        class="fa-solid fa-xmark"></i></button>
+                            </div>
+                            <div class="btn-row d-flex justify-content-evenly">
+                                <button class="input-btn" onclick="displayNumber(4)">4</button>
+                                <button class="input-btn" onclick="displayNumber(5)">5</button>
+                                <button class="input-btn" onclick="displayNumber(6)">6</button>
+                                <button class="input-btn" onclick="displayNumber('-')"><i
+                                        class="fa-solid fa-minus"></i></button>
+                            </div>
+                            <div class="btn-row d-flex justify-content-evenly">
+                                <button class="input-btn" onclick="displayNumber(1)">1</button>
+                                <button class="input-btn" onclick="displayNumber(2)">2</button>
+                                <button class="input-btn" onclick="displayNumber(3)">3</button>
+                                <button class="input-btn" onclick="displayNumber('+')"><i
+                                        class="fa-solid fa-plus"></i></button>
+                            </div>
+                            <div class="btn-row d-flex justify-content-evenly">
+                                <button class="input-btn disabled"></button>
+                                <button class="input-btn" onclick="displayNumber(0)">0</button>
+                                <button class="input-btn" onclick="displayNumber('.')"><i
+                                        class="fa-solid fa-circle dot-icon"></i></button>
+                                <button class="input-btn equal-btn" onclick="findResult()"><i
+                                        class="fa-solid fa-equals"></i></button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-12"></div>
+            </div>
+        </div>
+    </section>
+    <!-- Section ends -->
+
+    <!-- Footer Starts -->
+    <footer class="footer-module">
+        <div class="container">
+            <p class="email-add">anaghaprajeesh2011@gmail.com</p>
+        </div>
+    </footer>
+    <!-- Footer ends -->
+
+</body>
+<script src="./assets/js/calculator.js"></script>
+
+</html>
